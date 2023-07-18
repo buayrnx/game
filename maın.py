@@ -17,7 +17,7 @@ from direct.showbase.DirectObject import DirectObject
 from direct.actor.Actor import Actor
 import random
 
-loadPrcFile("settings.prc")
+loadPrcFile("settıngs.prc")
 
 def degToRad(degrees):
        return degrees * ( pi / 180.0)
@@ -74,7 +74,7 @@ class MyGame(ShowBase):
 
         for i in range(9):
             heartImage = OnscreenImage(
-                image = "heart_image.png",
+                image = "heart_ımage.png",
                 pos = ( -1.4 + i * 0.1, 0, -0.95),
                 scale = (0.05, 1, 0.05)
             )
@@ -479,7 +479,7 @@ class MyGame(ShowBase):
         self.camLens.setFov(90)
         
         crosshairs = OnscreenImage(
-            image = "crosshairs.png",
+            image = "crosshaırs.png",
             pos = (0, 0, 0),
             scale = 0.05
         )
@@ -525,7 +525,7 @@ class MyGame(ShowBase):
             self.createTree(x, y, z)
 
     def createTree(self, x, y, z):
-        tree =self.loader.loadModel("minecraft_tree.glb")
+        tree =self.loader.loadModel("mınecraft_tree.glb")
         tree.setPos(x, y, z)
         tree.setScale(5)
         tree.reparentTo(self.render)
